@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "888e1a0c-2fcb-4a8a-a76e-1b5405fad30f",
+		"name": "SHOP-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"monitor\",\r\n  \"description\": \"LG UltraGear 27GN800\",\r\n  \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\r\n  \"price\": \"800\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/article/create",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"article",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"monitor\",\r\n  \"description\": \"LG UltraGear 27GN800\",\r\n  \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\r\n  \"price\": \"800\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/article/create",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"article",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "288"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"120-b2zM4L3sS4BPhGiwAjilyirg7Uc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Apr 2021 18:56:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"received\",\n    \"article\": {\n        \"_id\": \"606768e9066d8b1c58f1d073\",\n        \"name\": \"monitor\",\n        \"description\": \"LG UltraGear 27GN800\",\n        \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\n        \"price\": 800,\n        \"createdAt\": \"2021-04-02T18:56:41.677Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": 820\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/article/6067675d60ce171dd85f7574",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"article",
+						"6067675d60ce171dd85f7574"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"price\": 820\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/article/6067675d60ce171dd85f7574",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"article",
+								"6067675d60ce171dd85f7574"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-GypudIjfl2KjP6zItkmYwm+Byuc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Apr 2021 18:50:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Article updated correctly\",\n    \"article\": {\n        \"_id\": \"6067675d60ce171dd85f7574\",\n        \"name\": \"monitor\",\n        \"description\": \"LG UltraGear 27GN800\",\n        \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\n        \"price\": 820,\n        \"createdAt\": \"2021-04-02T18:50:05.063Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/article",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/article",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"article"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "788"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"314-+RA7YRx77y46QR2WqKhY3vXnaec\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Apr 2021 18:57:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"_id\": \"60675638730dfa2154bc5a0f\",\n            \"name\": \"laptop\",\n            \"description\": \"i7:8\",\n            \"imageURL\": \"https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/1/118187_-_-x509fb-br031t_1.jpg\",\n            \"price\": 800,\n            \"createdAt\": \"2021-04-02T17:36:56.536Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"606768c5a4208c1d8496d38e\",\n            \"name\": \"monitor\",\n            \"description\": \"LG UltraGear 27GN800\",\n            \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\n            \"price\": 800,\n            \"createdAt\": \"2021-04-02T18:56:05.532Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"606768e9066d8b1c58f1d073\",\n            \"name\": \"monitor\",\n            \"description\": \"LG UltraGear 27GN800\",\n            \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\n            \"price\": 800,\n            \"createdAt\": \"2021-04-02T18:56:41.677Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/article/60675638730dfa2154bc5a0f",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"article",
+						"60675638730dfa2154bc5a0f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ONE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/article/60675638730dfa2154bc5a0f",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"article",
+								"60675638730dfa2154bc5a0f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"105-CqmqthehZit3ayc5rnuy6p5rPZU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Apr 2021 18:55:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"60675638730dfa2154bc5a0f\",\n    \"name\": \"laptop\",\n    \"description\": \"i7:8\",\n    \"imageURL\": \"https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/1/118187_-_-x509fb-br031t_1.jpg\",\n    \"price\": 800,\n    \"createdAt\": \"2021-04-02T17:36:56.536Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "REMOVE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/article/?articleID=6067675d60ce171dd85f7574",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"article",
+						""
+					],
+					"query": [
+						{
+							"key": "articleID",
+							"value": "6067675d60ce171dd85f7574"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "REMOVE",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/article/?articleID=6067675d60ce171dd85f7574",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"article",
+								""
+							],
+							"query": [
+								{
+									"key": "articleID",
+									"value": "6067675d60ce171dd85f7574"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "305"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"131-5JtF3G73vEnwtjaD8z8kvZ3U4bo\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Apr 2021 18:55:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Article deleted correctly\",\n    \"article\": {\n        \"_id\": \"6067675d60ce171dd85f7574\",\n        \"name\": \"monitor\",\n        \"description\": \"LG UltraGear 27GN800\",\n        \"imageURL\": \"https://www.muycomputer.com/wp-content/uploads/2020/11/LG-UltraGear-27GN800-e1604484455987.jpg\",\n        \"price\": 820,\n        \"createdAt\": \"2021-04-02T18:50:05.063Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
