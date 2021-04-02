@@ -5,14 +5,14 @@
     },
     "builds": [
         {
-            "src": "src/main.js",
+            "src": "dist/main.js",
             "use": "@now/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/main.js",
+            "dest": "dist/main.js",
             "methods": [
                 "GET",
                 "POST",
