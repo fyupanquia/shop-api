@@ -5,7 +5,7 @@
   "author": "fyupanquia",
   "private": true,
   "license": "UNLICENSED",
-  "main": "dist/main.js",
+  "main": "src/main.ts",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
