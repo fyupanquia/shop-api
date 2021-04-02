@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "env": {
+        "MONGO_URI": "@shop_api_mongo_uri"
+    },
+    "builds": [
+        {
+            "src": "dist/main.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "dist/main.js",
+            "methods": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ]
+        }
+    ]
+}

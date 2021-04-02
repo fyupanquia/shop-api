@@ -1,10 +1,11 @@
 {
   "name": "shop-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "An REST API with NESTJS and MONGODB",
+  "author": "fyupanquia",
   "private": true,
   "license": "UNLICENSED",
+  "main": "dist/main.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",

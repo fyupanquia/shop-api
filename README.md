@@ -6,7 +6,7 @@
 
 ## Description
 
-An api REST with [Nest](https://github.com/nestjs/nest) and [Mongo](https://www.mongodb.com/es)
+An REST API with [Nest](https://github.com/nestjs/nest) and [Mongo](https://www.mongodb.com/es)
 
 ## Installation
 
@@ -42,6 +42,9 @@ $ npm run test:cov
 
 ## Documentation
 https://documenter.getpostman.com/view/2530523/TzCP88H1
+
+## DEPLOYMENT
+https://shop-api-five.vercel.app
 
 ## Stay in touch
 - Author - [Yupanqui Allcca Frank](https://kamilmysliwiec.com)
