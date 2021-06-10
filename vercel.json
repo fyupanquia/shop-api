@@ -5,6 +5,9 @@
     },
     "builds": [
         {
+         "env": {
+          "MONGO_URI": "@shop_api_mongo_uri"
+            },
             "src": "src/main.ts",
             "use": "@vercel/node"
         }
